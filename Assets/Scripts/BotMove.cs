@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BotMove : MonoBehaviour
@@ -13,6 +14,8 @@ public class BotMove : MonoBehaviour
     Animator animator;
 
     bool broken = true;
+
+    public ParticleSystem smokeEffect;
 
     private Vector2 position;
     // Start is called before the first frame update
@@ -84,6 +87,8 @@ public class BotMove : MonoBehaviour
         broken = false;
         rigidbody2d.simulated = false;
         animator.SetTrigger("Fixed");
+        smokeEffect.Stop();
+         
     }
     
     

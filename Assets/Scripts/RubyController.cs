@@ -76,7 +76,7 @@ public class RubyController : MonoBehaviour
         Debug.Log(currentHealth + "/" + maxHealth);
         if (currentHealth <= 0)
             Debug.Log(currentHealth + " " +
-                " ÏÈÇÄÀ ÒÂÎÅÌÓ ÐÛÆÅÌÓ ÅÁÀËÓ");
+                " ÐŸÐ˜Ð—Ð”Ð Ð¢Ð’ÐžÐ•ÐœÐ£ Ð Ð«Ð–Ð•ÐœÐ£ Ð•Ð‘ÐÐ›Ð£");
     }
 
     void Launch()

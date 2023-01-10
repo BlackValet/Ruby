@@ -87,7 +87,7 @@ public class BotMove : MonoBehaviour
         broken = false;
         rigidbody2d.simulated = false;
         animator.SetTrigger("Fixed");
-        smokeEffect.Stop();
+        smokeEffect.IsDestroyed();
          
     }
     
